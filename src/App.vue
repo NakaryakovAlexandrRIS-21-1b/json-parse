@@ -1,10 +1,15 @@
 <template>
-  <HelloWorld :name="prod.Name" :elements="prod.Elements" :depht="0"/>
+  <HelloWorld 
+  :name="prod.Name" 
+  :elements="prod.Elements" 
+  :depht="0"/>
+  <!-- <catalog/> -->
 </template>
 
 <script>
 import products from "./products.json"
 import HelloWorld from './components/HelloWorld.vue'
+import catalog from "./components/catalog.vue"
 
 export default{
   data(){
@@ -13,11 +18,9 @@ export default{
     }
   },
   components:{
-    HelloWorld
+    HelloWorld,
+    catalog
   },
-  methods:{
-    random(){}
-  }
 }
 </script>
 

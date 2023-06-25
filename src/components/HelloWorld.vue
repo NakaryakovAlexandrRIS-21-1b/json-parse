@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div :style="indient" @click="categoryClick" class="store">{{ name }}</div>
+    <div :style="indient" @click="categoryClick">{{ name }}</div>
   </div>
   <div>
     <div v-if="opened">
